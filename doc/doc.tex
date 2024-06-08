@@ -1,0 +1,66 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage{listings}
+\usepackage{utopia}
+\usepackage{geometry}
+\geometry{
+    letterpaper,
+    left=0.5in,
+    right=0.5in,
+    top=1in,
+    bottom=0.5in,
+}
+\usepackage{xcolor}
+\definecolor{mycolor}{HTML}{1d2021}
+\pagecolor{mycolor}
+\definecolor{mycolor3}{HTML}{f5fcf5}
+\color{mycolor3}
+%\title{CV}
+\author{}
+\date{}
+\begin{document}
+%\maketitle
+\noindent
+\newpage
+
+\section*{Technical Assignment-for edrakh}
+this is the documentation for the assignment tasks\\
+\\
+task 1:\\
+for the first task we just create a the directory with simple mkdir command, but instead of multiple mkdir command we just create them from single command using simple RE, then touch to create the files and cat any thing to these files.\\
+note that i use /usr/bin/env because i am running nixos on my machine now so this is the way to go as nixos have diffrennt FHS.\\
+\\
+output:\\
+user@user:  ls project/*/\\
+project/docs/:\\
+README.md\\
+\\
+project/src/:\\
+main.py\\
+\\
+project/test/:\\
+test\_main.py\\
+task 2:\\
+check task2.sh\\
+\\
+\\
+output:\\
+user@user:  hostname\\
+devops-student
+task 3:\\
+using ip to print and then pass it to grep to get all lines start with inet then filter loopback and then get the ip only by using awk.\\
+\\
+output:\\
+user@user:  ./task3.sh\\
+192.168.8.14/24\\
+task 4:\\
+installing mysql depend on whether by building it from the git repo or by installing it from the package manger whatever it is, for me i use nixos so by just adding these lines to the conifguration and rebuild the mysql server get installed.\\
+services.mysql = \{\\
+  enable = true;\\
+  package = pkgs.mariadb;\\
+\};\\
+\\
+the mariadb is a fork of mysql.\\
+\\
+
+\pagestyle{empty}
+\end{document}
