@@ -1,0 +1,301 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/nixos.org) (preloaded format=pdflatex 1980.1.1)  9 JUN 2024 20:02
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**doc.tex
+(./doc.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/extsizes/extarticle.cls
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/extsizes/size14.clo
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/base/exscale.sty
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen140
+)
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen141
+)
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/listings/listings.sty
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+\lst@mode=\count196
+\lst@gtempboxa=\box51
+\lst@token=\toks18
+\lst@length=\count197
+\lst@currlwidth=\dimen142
+\lst@column=\count198
+\lst@pos=\count199
+\lst@lostspace=\dimen143
+\lst@width=\dimen144
+\lst@newlines=\count266
+\lst@lineno=\count267
+\lst@maxwidth=\dimen145
+
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/listings/lstpatch.sty
+File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
+)
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/listings/lstmisc.sty
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+\c@lstnumber=\count268
+\lst@skipnumbers=\count269
+\lst@framebox=\box52
+)
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/listings/listings.cfg
+File: listings.cfg 2024/02/21 1.10 listings configuration
+))
+Package: listings 2024/02/21 1.10 (Carsten Heinz)
+
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/psnfss/utopia.sty
+Package: utopia 2020/03/25 PSNFSS-v9.3 (P.Dyballa) 
+
+
+Package utopia Warning: This package is to be regarded as obsolete.
+(utopia)                See the PSNFSS documentation.
+
+)
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/gen
+eric/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/gen
+eric/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count270
+\Gm@cntv=\count271
+\c@Gm@tempcnt=\count272
+\Gm@bindingoffset=\dimen146
+\Gm@wd@mp=\dimen147
+\Gm@odd@mp=\dimen148
+\Gm@even@mp=\dimen149
+\Gm@layoutwidth=\dimen150
+\Gm@layoutheight=\dimen151
+\Gm@layouthoffset=\dimen152
+\Gm@layoutvoffset=\dimen153
+\Gm@dimlist=\toks19
+)
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+LaTeX Font Info:    Trying to load font information for OT1+put on input line 2
+0.
+
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/psnfss/ot1put.fd
+File: ot1put.fd 2001/06/04 font definitions for OT1/put.
+)
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count273
+\l__pdf_internal_box=\box53
+) (./doc.aux)
+\openout1 = `doc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+\c@lstlisting=\count274
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
+* v-part:(T,H,B)=(72.26999pt, 686.565pt, 36.135pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=542.02501pt
+* \textheight=686.565pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-39.0pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=14.0pt
+* \footskip=30.0pt
+* \marginparwidth=15.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/con
+text/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count275
+\scratchdimen=\dimen154
+\scratchbox=\box54
+\nofMPsegments=\count276
+\nofMParguments=\count277
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count278
+\MPscratchDim=\dimen155
+\MPnumerator=\count279
+\makeMPintoPDFobject=\count280
+\everyMPtoPDFconversion=\toks21
+)
+LaTeX Font Info:    Trying to load font information for OMS+put on input line 6
+0.
+
+(/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/tex/lat
+ex/psnfss/omsput.fd
+File: omsput.fd 
+)
+LaTeX Font Info:    Font shape `OMS/put/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--84
+
+ []
+
+[1
+
+{/nix/store/vd70007fx3fj01rf0mpnnqqsrp7i0qqp-texlive-2023-env/share/texmf-var/f
+onts/map/pdftex/updmap/pdftex.map}{/nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-
+texlive-2023-env-texmfdist/fonts/enc/dvips/base/8r.enc}] [2] (./doc.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 3463 strings out of 474116
+ 56336 string characters out of 5720541
+ 1932187 words of memory out of 5000000
+ 25838 multiletter control sequences out of 15000+600000
+ 567372 words of font info for 43 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,6n,65p,264b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</nix/store/nn50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></nix/store/nn50xms44xc7fhb1cm6vicw77hpppx
+zl-texlive-2023-env-texmfdist/fonts/type1/adobe/utopia/putb8a.pfb></nix/store/n
+n50xms44xc7fhb1cm6vicw77hpppxzl-texlive-2023-env-texmfdist/fonts/type1/adobe/ut
+opia/putr8a.pfb>
+Output written on doc.pdf (2 pages, 43467 bytes).
+PDF statistics:
+ 27 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

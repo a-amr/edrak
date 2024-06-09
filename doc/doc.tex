@@ -25,6 +25,7 @@
 \section*{Technical Assignment-for edrakh}
 this is the documentation for the assignment tasks\\
 \\
+-----------------------------------\\
 task 1:\\
 for the first task we just create a the directory with simple mkdir command, but instead of multiple mkdir command we just create them from single command using simple RE, then touch to create the files and cat any thing to these files.\\
 note that i use /usr/bin/env because i am running nixos on my machine now so this is the way to go as nixos have diffrennt FHS.\\
@@ -39,19 +40,21 @@ main.py\\
 \\
 project/test/:\\
 test\_main.py\\
+-----------------------------------\\
 task 2:\\
 check task2.sh\\
 \\
-\\
 output:\\
 user@user:  hostname\\
-devops-student
+devops-student\\
+-----------------------------------\\
 task 3:\\
-using ip to print and then pass it to grep to get all lines start with inet then filter loopback and then get the ip only by using awk.\\
+using ip to print and then pass it to grep to get all line sthat start with inet then filter loopback and then get the ip only by using awk.\\
 \\
 output:\\
 user@user:  ./task3.sh\\
 192.168.8.14/24\\
+-----------------------------------\\
 task 4:\\
 installing mysql depend on whether by building it from the git repo or by installing it from the package manger whatever it is, for me i use nixos so by just adding these lines to the conifguration and rebuild the mysql server get installed.\\
 services.mysql = \{\\
@@ -61,6 +64,26 @@ services.mysql = \{\\
 \\
 the mariadb is a fork of mysql.\\
 \\
+the task4.sh file use mysql command with -e to run commands directly from the shell, and there is no outputs if the task run successfully.\\
+-----------------------------------\\
+task 5:\\
+using mysqldump to backup the database.\\ofcource it would be better if we encrypted the .sql file with something like gpg if the disk not encrypted, but for now this is unnecessary.\\
+-----------------------------------\\
+task 6:\\
+for the backup.sh i used rsync which pretty good tool called rsync, rsync has a lot of options and features like compressing, but we just need the -a,--partial, and --append you can see the man page for more info, also i used -v but it isn't mandatory.\\
+-----------------------------------\\
+task 7:\\
+although systemd timers have more features but cron is a very good tool that serve most use cases\\
+to make a cron service in linux, first you need to install it, and then use crontab -e to edit the cron config file\\
+in nixos we can create them easily by adding them to the configuration.nix file like that \\
+services.cron = {\\
+    enable = true;\\
+    systemCronJobs = [\\
+      "5 */3 * * *  username    foo   bar"\\
+      "0 0 * * *  ababa    /home/ababa/edrakSoftware/task6/backup.sh /home/ababa/important/ /home/ababa/cronbackup/"\\
+      "* * * * *  ababa    /home/ababa/edrakSoftware/task6/backup.sh /home/ababa/important/ /home/ababa/cronbackup/"
+    ];\\
+  };\\
 
 \pagestyle{empty}
 \end{document}
