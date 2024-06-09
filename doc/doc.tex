@@ -103,5 +103,18 @@ MysqlDB:: CREATE USER 'test\_plugin'@'localhost' IDENTIFIED BY 'bad';\\
 ERROR 1819 (HY000): Your password does not satisfy the current policy requirements (simple\_password\_check)\\
 -----------------------------------\\
 task 9:\\
+there are a lot of monitoring tools like a tool called btop written in cpp and it has good ui and configured at the run time, for more advanced usage there is (nmon-written in c-, and glances) both have the ability to export the logs to external files for later analizing.\\
+for the gpu there is nice tool called nvtop \\
+\\
+for the sql logs adding this lines to the my.cnf enable the logging\\
+general\_log = 1\\
+general\_log\_file = /home/ababa/.mysql/logs\\
+\\
+also by default you can see the logs by systemctl tools\\
+user@user: journalctl -u mysql.service\\
+\\
+\newpage
+-----------------------------------\\
+last task:\\
 \pagestyle{empty}
 \end{document}
