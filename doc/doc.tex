@@ -1,4 +1,6 @@
 \documentclass[a4paper,14pt]{extarticle}
+
+\usepackage{hyperref}
 \usepackage{listings}
 \usepackage{utopia}
 \usepackage{geometry}
@@ -55,6 +57,7 @@ output:\\
 user@user:  ./task3.sh\\
 192.168.8.14/24\\
 -----------------------------------\\
+\newpage
 task 4:\\
 installing mysql depend on whether by building it from the git repo or by installing it from the package manger whatever it is, for me i use nixos so by just adding these lines to the conifguration and rebuild the mysql server get installed.\\
 services.mysql = \{\\
@@ -79,11 +82,26 @@ in nixos we can create them easily by adding them to the configuration.nix file 
 services.cron = {\\
     enable = true;\\
     systemCronJobs = [\\
-      "5 */3 * * *  username    foo   bar"\\
       "0 0 * * *  ababa    /home/ababa/edrakSoftware/task6/backup.sh /home/ababa/important/ /home/ababa/cronbackup/"\\
-      "* * * * *  ababa    /home/ababa/edrakSoftware/task6/backup.sh /home/ababa/important/ /home/ababa/cronbackup/"
-    ];\\
-  };\\
+   ];\\
+\};\\
+-----------------------------------\\
+\newpage
+task 8:\\
+adding the line below to Configure the SQL server to only accept connections from localhost.\\
+\\
+bind-address=127.0.0.1\\
+\\
+\\
+for the password checking after some research i found a good plugin for mariadb called simple\_password\_check check this for more info\\
+\href{https://mariadb.com/kb/en/simple-password-check-plugin/}{Link}\\
+installing the plugin either by my.cnf or by running\\
+INSTALL SONAME 'simple\_password\_check';\\
 
+test output:\\
+MysqlDB:: CREATE USER 'test\_plugin'@'localhost' IDENTIFIED BY 'bad';\\
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements (simple\_password\_check)\\
+-----------------------------------\\
+task 9:\\
 \pagestyle{empty}
 \end{document}
