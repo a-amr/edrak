@@ -16,10 +16,10 @@
 \pagecolor{mycolor}
 \definecolor{mycolor3}{HTML}{f5fcf5}
 \color{mycolor3}
-%\title{CV}
 \author{}
 \date{}
 \begin{document}
+%\title{CV}
 %\maketitle
 \noindent
 \newpage
@@ -116,5 +116,23 @@ user@user: journalctl -u mysql.service\\
 \newpage
 -----------------------------------\\
 last task:\\
+the security in linux servers is heavely depend on the use-case, but here is general best practices that suited for almost every use-case.\\
+\begin{itemize}
+  \item remove/disable/block everything that you don't use like open ports,apps and services.
+  \item make sure there is a good password policy by checking with tools like cracklib witch clracklib-check tool\\
+      or by enforcing a good pasword by any policykit like libpam-cracklib or by using pam\_pwquality library.\\
+  \href{https://wiki.archlinux.org/title/Security#Enforcing\_strong\_passwords\_with\_pam\_pwquality}{Arch wiki link}\\
+  \item it's not a bad idea to disable ssh password login and enable key login in theory if you have a good passwords this wouldn't make any diff but it's a good additionlayer of protection also you if you can create ssh ip whitelist that block any ip not in the list from using ssh\\
+    also changing ssh port will help with bot or blind bruteforce attacks, but wouldn't help that much with an organized attack.
+  \item control and limit who can use sudo or su, disabling su completly is good idea to consider.
+  \item using firewall like ufw
+  \item using AppArmor which is a Linux kernel security module that allows the system administrator to restrict programs capabilities like network access,file permission and other capabilities.
+  \item using or compiling a kernel with Security-Enhanced Linux or aka SElinux.
+  \item also using a  vulnerability scanner like Nessus or lynix.
+  \item using an Intrusion prevention software like Fail2ban witch will help with bruteforce attacks.
+  \item setting hidepid to 2 for the /proc folder can be a  good option for some use-cases but in general the default behavier is more suitable for most use-cases.
+  \item for the physical security see \href{https://wiki.archlinux.org/title/security#Physical\_security}{Arch wiki}\\
+  \end{itemize}
+
 \pagestyle{empty}
 \end{document}
