@@ -24,13 +24,17 @@
 \noindent
 \newpage
 
-\section*{Technical Assignment-for edrakh}
-this is the documentation for the assignment tasks\\
+\section*{Technical Assignment - for edrakh}
+This is the documentation for the assignment tasks.
+\\
 \\
 -----------------------------------\\
-task 1:\\
-for the first task we just create a the directory with simple mkdir command, but instead of multiple mkdir command we just create them from single command using simple RE, then touch to create the files and cat any thing to these files.\\
-note that i use /usr/bin/env because i am running nixos on my machine now so this is the way to go as nixos have diffrennt FHS.\\
+Task 1: \\
+For the first task, we just create a directory with a simple 'mkdir' command. Instead of using multiple 'mkdir' commands, we create them from
+a single command using a simple regular expression. Then, we use 'touch' to create the files and 'cat' anything to these files.
+\\
+Note that I used '/usr/bin/env' because I am running NixOS on my machine now, so this is the way to go as NixOS has a different File
+Hierarchy Structure (FHS).
 \\
 output:\\
 user@user:  ls project/*/\\
@@ -43,23 +47,24 @@ main.py\\
 project/test/:\\
 test\_main.py\\
 -----------------------------------\\
-task 2:\\
+Task 2:\\
 check task2.sh\\
 \\
 output:\\
 user@user:  hostname\\
 devops-student\\
 -----------------------------------\\
-task 3:\\
-using ip to print and then pass it to grep to get all line sthat start with inet then filter loopback and then get the ip only by using awk.\\
+Task 3:\\
+Using IP to print and then pass it to grep to get all lines that start with 'inet' then filter loopback and then get the IP only by using awk.\\
 \\
 output:\\
 user@user:  ./task3.sh\\
 192.168.8.14/24\\
 -----------------------------------\\
 \newpage
-task 4:\\
-installing mysql depend on whether by building it from the git repo or by installing it from the package manger whatever it is, for me i use nixos so by just adding these lines to the conifguration and rebuild the mysql server get installed.\\
+Task 4:\\
+Installing MySQL depends on whether you build it from the Git repo or install it from the package manager. Whatever method you choose, for me, I use
+NixOS. By adding these lines to the configuration and rebuilding the NixOS , MySQL server gets installed.
 services.mysql = \{\\
   enable = true;\\
   package = pkgs.mariadb;\\
@@ -67,18 +72,19 @@ services.mysql = \{\\
 \\
 the mariadb is a fork of mysql.\\
 \\
-the task4.sh file use mysql command with -e to run commands directly from the shell, and there is no outputs if the task run successfully.\\
+the task4.sh file use MySQL command with -e to run commands directly from the shell, and there is no outputs if the task run successfully.\\
 -----------------------------------\\
-task 5:\\
-using mysqldump to backup the database.\\ofcource it would be better if we encrypted the .sql file with something like gpg if the disk not encrypted, but for now this is unnecessary.\\
+Task 5:\\
+Using mysqldump to backup the database.\\
+Of course, it would be better if we encrypted the .sql file with something like 'gpg' if the disk is not encrypted, but for now this is unnecessary.\\
 -----------------------------------\\
-task 6:\\
-for the backup.sh i used rsync which pretty good tool called rsync, rsync has a lot of options and features like compressing, but we just need the -a,--partial, and --append you can see the man page for more info, also i used -v but it isn't mandatory.\\
+Task 6:\\
+For the backup.sh, I used rsync, which is a pretty good tool called rsync. rsync has a lot of options and features like compressing, but we just need the -a, --partial, and --append. You can see the man page for more info. Also, I used -v, but it isn't mandatory.\\
 -----------------------------------\\
-task 7:\\
-although systemd timers have more features but cron is a very good tool that serve most use cases\\
-to make a cron service in linux, first you need to install it, and then use crontab -e to edit the cron config file\\
-in nixos we can create them easily by adding them to the configuration.nix file like that \\
+Task 7:\\
+Although systemd timers have more features, 'cron' is a very good tool that serves most use cases.\\
+To make a 'cron' service in Linux, first, you need to install it, and then use 'crontab -e' to edit the 'cron' config file.\\
+In NixOS, we can create them easily by adding them to the 'configuration.nix' file like this:\\
 services.cron = {\\
     enable = true;\\
     systemCronJobs = [\\
@@ -87,52 +93,59 @@ services.cron = {\\
 \};\\
 -----------------------------------\\
 \newpage
-task 8:\\
-adding the line below to Configure the SQL server to only accept connections from localhost.\\
+Task 8:\\
+Adding the line below to configure the SQL server to only accept connections from localhost:\\
 \\
 bind-address=127.0.0.1\\
 \\
 \\
-for the password checking after some research i found a good plugin for mariadb called simple\_password\_check check this for more info\\
-\href{https://mariadb.com/kb/en/simple-password-check-plugin/}{Link}\\
-installing the plugin either by my.cnf or by running\\
+For the password checking, after some research, I found a good plugin for MariaDB called 'simple\_password\_check'. Check this link for more info:\\ 
+\href{https://mariadb.com/kb/en/simple-password-check-plugin/}{see the link}.\\
+Installing the plugin can be done either by configuring 'my.cnf' or by running:\\
 INSTALL SONAME 'simple\_password\_check';\\
-
-test output:\\
+\\
+Test output:\\
 MysqlDB:: CREATE USER 'test\_plugin'@'localhost' IDENTIFIED BY 'bad';\\
 ERROR 1819 (HY000): Your password does not satisfy the current policy requirements (simple\_password\_check)\\
 -----------------------------------\\
-task 9:\\
-there are a lot of monitoring tools like a tool called btop written in cpp and it has good ui and configured at the run time, for more advanced usage there is (nmon-written in c-, and glances) both have the ability to export the logs to external files for later analizing.\\
+Task 9:\\
+There are a lot of monitoring tools like a tool called btop, written in C++ and it has a good UI. It is configured at runtime. For more advanced usage,
+there are (nmon, written in C-, and glances), both have the ability to export the logs to external files for later analyzing.\\
 for the gpu there is nice tool called nvtop \\
 \\
-for the sql logs adding this lines to the my.cnf enable the logging\\
+For the GPU, there is a nice tool called nvtop.
+\\
+For SQL logs, add these lines to the my.cnf file to enable logging:
 general\_log = 1\\
 general\_log\_file = /home/ababa/.mysql/logs\\
 \\
-also by default you can see the logs by systemctl tools\\
+Also, by default, you can see the logs using systemctl tools.\\
 user@user: journalctl -u mysql.service\\
 \\
 \newpage
 -----------------------------------\\
-last task:\\
-the security in linux servers is heavely depend on the use-case, but here is general best practices that suited for almost every use-case.\\
+Last Task:\\
+The security in Linux servers is heavily dependent on the use-case, but here are general best practices that suit almost every use-case.\\
 \begin{itemize}
-  \item remove/disable/block everything that you don't use like open ports,apps and services.
-  \item make sure there is a good password policy by checking with tools like cracklib witch clracklib-check tool\\
-      or by enforcing a good pasword by any policykit like libpam-cracklib or by using pam\_pwquality library.\\
-  \href{https://wiki.archlinux.org/title/Security#Enforcing\_strong\_passwords\_with\_pam\_pwquality}{Arch wiki link}\\
-  \item it's not a bad idea to disable ssh password login and enable key login in theory if you have a good passwords this wouldn't make any diff but it's a good additionlayer of protection also you if you can create ssh ip whitelist that block any ip not in the list from using ssh\\
-    also changing ssh port will help with bot or blind bruteforce attacks, but wouldn't help that much with an organized attack.
-  \item control and limit who can use sudo or su, disabling su completly is good idea to consider.
-  \item using firewall like ufw
-  \item using AppArmor which is a Linux kernel security module that allows the system administrator to restrict programs capabilities like network access,file permission and other capabilities.
-  \item using or compiling a kernel with Security-Enhanced Linux or aka SElinux.
-  \item also using a  vulnerability scanner like Nessus or lynix.
-  \item using an Intrusion prevention software like Fail2ban witch will help with bruteforce attacks.
-  \item setting hidepid to 2 for the /proc folder can be a  good option for some use-cases but in general the default behavier is more suitable for most use-cases.
-  \item for the physical security see \href{https://wiki.archlinux.org/title/security#Physical\_security}{Arch wiki}\\
-  \end{itemize}
+    \item Remove, disable, or block everything you don't use, such as open ports, apps, and services.
+    \item Ensure there is a good password policy by using tools like CrackLib, which includes the 'cracklib-check' tool. Alternatively,
+enforce a good password with any policy kit, such as libpam-cracklib, or utilize pam\_pwquality
+    library.\\\href{https://wiki.archlinux.org/title/Security#Enforcing\_strong\_passwords\_with\_pam\_pwquality}{Arch wiki link}\\
+    \item It's not a bad idea to disable SSH password login and enable key login. In theory, if you have good passwords, this wouldn't make
+any difference; however, it provides an additional layer of protection. You can also create an SSH IP whitelist that blocks any IP address
+not in the list from using SSH.\\
+    Also, changing the SSH port will help with bots or blind brute-force attacks, but wouldn't significantly impact an organized attack.
+    \item Control and limit who can use 'sudo' or 'su', disabling 'su' completely is a good idea to consider.
+    \item Use a firewall like 'ufw'.
+    \item Utilize AppArmor, which is a Linux kernel security module that allows system administrators to restrict program capabilities, such
+as network access, file permissions, and other capabilities.
+    \item Compile or use a kernel with Security-Enhanced Linux (SElinux).
+    \item Use a vulnerability scanner like Nessus or Lynis.
+    \item Utilize an Intrusion Prevention Software (IPS) like Fail2ban, which will help with brute-force attacks.
+    \item Set 'hidepid' to 2 for the '/proc' folder, which can be a good option for some use-cases. However, in general, the default behavior
+is more suitable for most use-cases.
+    \item For physical security, see \href{https://wiki.archlinux.org/title/security#Physical\_security}{Arch wiki}.
+\end{itemize}
 
 \pagestyle{empty}
 \end{document}
