@@ -7,7 +7,7 @@ ssh-keygen
 
 or 
 
-```bash
+```cmd
 ssh-keygen -b 4096
  ```
 
